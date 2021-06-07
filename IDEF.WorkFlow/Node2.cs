@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace IDEF.WorkFlow
 {
-    public class Node
+    public class Node2 : IAction
     {
-        public Guid Id { get; set; }
+        public void DoExecute(object context)
+        {
 
-        ////表示将往何处进行
-        //public List<Port> Ports { get; set; }
-
+        }
     }
 }

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D77C06A5-569D-475A-AD9B-30A12AC56CBE}</ProjectGuid>
+    <ProjectGuid>{ECFC52A9-FFAE-4D51-A14B-14B29A8BA4B3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IDEF.WorkFlow</RootNamespace>
-    <AssemblyName>IDEF.WorkFlow</AssemblyName>
+    <RootNamespace>IDEF.IWork</RootNamespace>
+    <AssemblyName>IDEF.IWork</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,19 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FlowContainer.cs" />
-    <Compile Include="FlowContext.cs" />
-    <Compile Include="FlowData.cs" />
-    <Compile Include="FlowService.cs" />
-    <Compile Include="Node.cs" />
+    <Compile Include="IWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WorkTask.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\IDEF.IWork\IDEF.IWork.csproj">
-      <Project>{ecfc52a9-ffae-4d51-a14b-14b29a8ba4b3}</Project>
-      <Name>IDEF.IWork</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

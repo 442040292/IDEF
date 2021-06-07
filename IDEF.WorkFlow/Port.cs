@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace IDEF.WorkFlow
 {
-    public class Node
+    public class Port
     {
-        public Guid Id { get; set; }
-
-        ////表示将往何处进行
-        //public List<Port> Ports { get; set; }
-
+        public Guid To { get; set; }
     }
 }

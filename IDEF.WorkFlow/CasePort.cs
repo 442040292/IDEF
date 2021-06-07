@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace IDEF.WorkFlow
 {
-    public class Node
+    public class CasePort : Port
     {
-        public Guid Id { get; set; }
-
-        ////表示将往何处进行
-        //public List<Port> Ports { get; set; }
-
+        //条件
+        public bool Condition { get; set; }
     }
 }

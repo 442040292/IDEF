@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDEF", "IDEF\IDEF.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDEF.WorkFlow", "IDEF.WorkFlow\IDEF.WorkFlow.csproj", "{D77C06A5-569D-475A-AD9B-30A12AC56CBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDEF.IWork", "IDEF.IWork\IDEF.IWork.csproj", "{ECFC52A9-FFAE-4D51-A14B-14B29A8BA4B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDEF.WorkDemo", "IDEF.WorkDemo\IDEF.WorkDemo.csproj", "{430D8EA8-2F10-4203-B770-54215B8643AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{D77C06A5-569D-475A-AD9B-30A12AC56CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D77C06A5-569D-475A-AD9B-30A12AC56CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D77C06A5-569D-475A-AD9B-30A12AC56CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECFC52A9-FFAE-4D51-A14B-14B29A8BA4B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECFC52A9-FFAE-4D51-A14B-14B29A8BA4B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECFC52A9-FFAE-4D51-A14B-14B29A8BA4B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECFC52A9-FFAE-4D51-A14B-14B29A8BA4B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{430D8EA8-2F10-4203-B770-54215B8643AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{430D8EA8-2F10-4203-B770-54215B8643AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{430D8EA8-2F10-4203-B770-54215B8643AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{430D8EA8-2F10-4203-B770-54215B8643AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
