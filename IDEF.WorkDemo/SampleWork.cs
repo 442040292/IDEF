@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IDEF.IWork;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +9,13 @@ namespace IDEF.WorkDemo
 {
     public class SampleWork : IWork.IWork
     {
-        public void RunWork()
+        public NodeRequest Request { get; set; } = null;
+        public NodeResponse Response { get; set; } = null;
+
+
+        public void RunWork(FlowContext flowcontext)
         {
+            
 
         }
     }

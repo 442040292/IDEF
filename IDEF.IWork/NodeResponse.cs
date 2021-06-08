@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace IDEF.IWork
 {
-    public interface IWork
+    public class NodeResponse
     {
-        void RunWork(FlowContext flowcontext);
     }
 }
