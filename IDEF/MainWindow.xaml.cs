@@ -23,6 +23,10 @@ namespace IDEF
         public MainWindow()
         {
             InitializeComponent();
+
+            Rect
         }
+
+
     }
 }

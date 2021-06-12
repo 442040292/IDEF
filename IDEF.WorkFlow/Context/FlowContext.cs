@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace IDEF.WorkFlow
 {
-    class FlowData
+    /// <summary>
+    /// 这里存储整个流程需要用到的数据
+    /// </summary>
+    public class FlowContext
     {
+
+
+
+
+
     }
 }
