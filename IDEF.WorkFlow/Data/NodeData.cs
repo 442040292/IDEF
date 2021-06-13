@@ -13,6 +13,11 @@ namespace IDEF.WorkFlow
     {
         public Guid Id { get; set; }
 
+        /// <summary>
+        /// 表示节点的类型
+        /// </summary>
+        public NodeType NodeType { get; set; }
+
         public List<ArgumentData> Arguments { get; set; }
     }
 }

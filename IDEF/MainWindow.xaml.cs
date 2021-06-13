@@ -24,7 +24,7 @@ namespace IDEF
         {
             InitializeComponent();
 
-            Rect
+            
         }
 
 

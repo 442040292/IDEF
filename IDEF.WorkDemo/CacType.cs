@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IDEF.IWork
+namespace IDEF.WorkDemo
 {
-    public interface IWork
+    public enum CacType
     {
-        void RunWork();
-
+        Add,
+        Cut,
     }
-
 }
