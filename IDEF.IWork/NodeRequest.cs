@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace IDEF.IWork
 {
-    public interface IWork
+    public class NodeRequest
     {
-        void RunWork();
     }
-
 }

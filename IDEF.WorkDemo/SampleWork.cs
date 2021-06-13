@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IDEF.IWork;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace IDEF.WorkDemo
     /// </summary>
     public class SampleWork : IWork.IWork
     {
+
         public int Param1 { get; set; }
 
         public int Param2 { get; set; }
@@ -35,6 +37,6 @@ namespace IDEF.WorkDemo
                     throw new Exception($"不存在的运算类型");
                     break;
             }
-        }
+
     }
 }
