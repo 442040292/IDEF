@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F23E9F13-33E9-42C2-AF95-8E37F5682FE5}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>IDEF</RootNamespace>
-    <AssemblyName>IDEF</AssemblyName>
+    <ProjectGuid>{131CF4D5-BF70-45D4-8CA6-64DD2F52D951}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>IDEF.ViewModels</RootNamespace>
+    <AssemblyName>IDEF.ViewModels</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -51,10 +54,19 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
+    <Compile Include="AssemblyHelper.cs" />
+    <Compile Include="Model\FlowNodeModel.cs" />
+    <Compile Include="Model\FlowPageModel.cs" />
+    <Compile Include="Model\MainFlowPageModel.cs" />
+    <Compile Include="Model\NodeTypeModel.cs" />
+    <Compile Include="RelayCommand.cs" />
+    <Compile Include="ViewModel\FlowPageViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\NodePickerViewModel.cs" />
+    <Content Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </ApplicationDefinition>
+    </Content>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -69,6 +81,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\NodePickerItemViewModel.cs" />
+    <Compile Include="NotifyPropertyBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -92,20 +106,21 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <Content Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\IDEF.Controls\IDEF.Controls.csproj">
-      <Project>{325f425f-4e93-4bc0-8ded-f967a7ee9150}</Project>
-      <Name>IDEF.Controls</Name>
+    <ProjectReference Include="..\IDEF.IWork\IDEF.IWork.csproj">
+      <Project>{ECFC52A9-FFAE-4D51-A14B-14B29A8BA4B3}</Project>
+      <Name>IDEF.IWork</Name>
     </ProjectReference>
-    <ProjectReference Include="..\IDEF.ViewModels\IDEF.ViewModels.csproj">
-      <Project>{131cf4d5-bf70-45d4-8ca6-64dd2f52d951}</Project>
-      <Name>IDEF.ViewModels</Name>
+    <ProjectReference Include="..\IDEF.LogUtils\IDEF.LogUtils.csproj">
+      <Project>{c5eafb11-f03b-4fa8-9c6b-edbf4fd84085}</Project>
+      <Name>IDEF.LogUtils</Name>
     </ProjectReference>
-    <ProjectReference Include="..\IDEF.Views\IDEF.Views.csproj">
-      <Project>{58ddae0d-dd2c-4ad1-98a4-f3f5ad9ebb93}</Project>
-      <Name>IDEF.Views</Name>
+    <ProjectReference Include="..\IDEF.WorkFlow\IDEF.WorkFlow.csproj">
+      <Project>{D77C06A5-569D-475A-AD9B-30A12AC56CBE}</Project>
+      <Name>IDEF.WorkFlow</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

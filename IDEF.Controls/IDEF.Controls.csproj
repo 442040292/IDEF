@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F23E9F13-33E9-42C2-AF95-8E37F5682FE5}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>IDEF</RootNamespace>
-    <AssemblyName>IDEF</AssemblyName>
+    <ProjectGuid>{325F425F-4E93-4BC0-8DED-F967A7EE9150}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>IDEF.Controls</RootNamespace>
+    <AssemblyName>IDEF.Controls</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -51,24 +54,10 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
+    <Compile Include="FlowPageCanvas.cs" />
+    <Compile Include="FlowNodeControl.xaml.cs">
+      <DependentUpon>FlowNodeControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -82,6 +71,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ThumbNodeEx.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -95,18 +85,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\IDEF.Controls\IDEF.Controls.csproj">
-      <Project>{325f425f-4e93-4bc0-8ded-f967a7ee9150}</Project>
-      <Name>IDEF.Controls</Name>
-    </ProjectReference>
     <ProjectReference Include="..\IDEF.ViewModels\IDEF.ViewModels.csproj">
       <Project>{131cf4d5-bf70-45d4-8ca6-64dd2f52d951}</Project>
       <Name>IDEF.ViewModels</Name>
     </ProjectReference>
-    <ProjectReference Include="..\IDEF.Views\IDEF.Views.csproj">
-      <Project>{58ddae0d-dd2c-4ad1-98a4-f3f5ad9ebb93}</Project>
-      <Name>IDEF.Views</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="FlowNodeControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

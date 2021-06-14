@@ -17,8 +17,6 @@ namespace IDEF.WorkFlow
 
         public string CustomerName { get; set; }
 
-        public Guid Id { get; set; }
-
         public string Type { get; set; }
 
         public string Expression { get; set; }
